@@ -1,0 +1,24 @@
+.home-page{
+    padding:10px;
+    width:100%;
+    // height:100vh;
+    overflow-y:scroll;
+    scroll-behavior: smooth;
+    background-color: var(--mainColorBg);
+    color:var(--fontMaincolor);
+    
+
+    section{
+        height: calc(100vh - 120px);
+        display:flex;
+        flex-direction: row;
+        justify-content: center;0
+        align-items: center;
+        margin:20px 40px;
+        border:2px solid var(--colorBorder);
+        box-shadow:2px 2px 5px 3px var(--colorBorder),
+                2px 2px 5px 5px var(--colorBorder);
+        
+    }
+
+}

@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500&display=swap");
+
+:root {
+  --font-color: #ffd700;
+  --font-color-white: #fff;
+  --blue: #0f3460;
+  --color-border: rgba(209, 209, 183, 0.66);
+  --color-nav-link: #88888d;
+  --bgSideBar: #1a1a2e;
+  --colorBg: #0f3460;
+  --hover-link: #ffd700;
+  --hover-link: var(--font-color);
+}
+
+html {
+  // font-size: 62.5%;
+  font-size: var(--font-size);
+}
+body {
+  margin: 0;
+  font-family: 300 11px/1.4 "halvetica Neue", "sans-serif";
+  color: #444;
+  background: var(--colorBg);
+}
+
+.container {
+  margin-left: 120px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--primaryColor);
+  
+}
+@media (max-width: 700px) {
+  .container {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 376px) {
+  .container {
+    margin-left: 75px;
+  }
+}

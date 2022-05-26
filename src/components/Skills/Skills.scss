@@ -1,0 +1,38 @@
+.skills-page{
+    
+    h1{
+        color:var(--font-color-white);
+        font-size:48px;
+        text-align:center
+    }
+    .skills-chart{
+        display:flex;
+        flex-direction: row;
+        margin:0 auto 0;
+        max-width:900px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .container-chart-skill{
+            // animation: backInUp 2s; 
+            &:nth-child(1){
+                animation: backInUp 1s;
+            }
+            &:nth-child(2){
+                animation: backInUp 1s 0.25s ;
+            }
+            &:nth-child(3){
+                animation: backInUp 1s 0.5s;
+            }
+            &:nth-child(4){
+                animation: backInUp 1s 0.75s ;
+            }
+            &:nth-child(5){
+                animation: backInUp 1s 1s ;
+            }
+            &:nth-child(6){
+                animation: backInUp 1s 1.25s;
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,125 @@
+.contact-page {
+  color: var(--font-color-white);
+  // margin-top: 100px;
+  margin:20px 0 30px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 48px;
+      text-align: center;
+    }
+    form {
+      width: 400px;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 3px;
+      box-shadow: 1px 1px 3px 4px var(--color-border);
+      -webkit-box-shadow: 1px 1px 3px 4px var(--color-border);
+      -moz-box-shadow: 1px 1px 3px 4px var(--color-border);
+
+      .form-control {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100px auto;
+        grid-template-areas: "label controll";
+        margin-top: 20px;
+        font-size: 1.2rem;
+        label {
+          grid-area: label;
+        }
+        input,
+        textarea {
+          grid-area: controll;
+          font-size: 18px;
+          font-family: "Courier New", Courier, monospace;
+          padding: 8px 5px;
+          width: 300px;
+        &:focus{
+            border:0;
+            outline:0;
+        }
+        }
+      }
+      div {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+        button {
+          text-align: center;
+          padding: 20px;
+          border-radius: 2px solid var(--font-color);
+          border-radius: 7px ;
+          background-color:var(--font-color);
+          color:var(--bgSideBar);
+          font-size:1.4rem;
+      
+
+          &:hover{
+              background-color:var(--bgSideBar);
+              border-radius: 2px solid var(--bgSideBar);
+              color:var(--font-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:600px){
+    .contact-page{
+        margin-top:20px;
+        .content{
+            form{
+                width:90%;
+                padding:7px;
+                margin:0;
+                // box-shadow:none;
+                
+            .form-control{
+                display:flex;
+                flex-direction: column;
+                margin-top:5px;
+                
+                label{
+                    display: block;
+                    margin-bottom:5px;
+                    font-size:12px;
+                }
+                input, textarea{
+                    width:90%;
+                    font-size:14px;
+                }
+            }
+        }
+        }
+    }
+}
+@media(max-width:300px){
+    .contact-page{
+        margin:20px;
+        .content{
+            form{
+                width:90%;
+                
+            .form-control{
+                display:flex;
+                flex-direction: column;
+                margin-top:5px;
+                
+                label{
+                    display: block;
+                    margin-bottom:5px;
+                    font-size:12px;
+                }
+                input, textarea{
+                    width:90%;
+                    font-size:14px;
+                }
+            }
+        }
+        }
+    }
+}
