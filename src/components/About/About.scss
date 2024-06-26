@@ -1,5 +1,10 @@
 .about-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     color:var(--font-color-white);
+    
    
     h1{
         font-size:64px;
@@ -7,6 +12,7 @@
         line-height: 70px;
         font-weight:700;
         text-align: center;
+        margin:0;
 
     }
     h4{

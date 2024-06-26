@@ -8,7 +8,7 @@ const Cube = () => {
             <div className=" cube-animate">
                 <div className="cube">
                     <div className="face front html"><FontAwesomeIcon icon={faHtml5}/></div>
-                    <div className="face back css"><FontAwesomeIcon icon={faCss3}/></div>
+                    <div className="face back css"><FontAwesomeIcon icon={faCss3}/>Css</div>
                     <div className="face right js"><FontAwesomeIcon icon={faJs}/></div>
                     <div className="face left react"><FontAwesomeIcon icon={faReact}/></div>
                     <div className="face top bootstrap"><FontAwesomeIcon icon={faBootstrap}/></div>

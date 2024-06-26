@@ -33,6 +33,7 @@ const Sidebar = () => {
                 <NavLink  exact ="true" activeclassname="active" className="skills-link" to="/projects">
                     <FontAwesomeIcon icon={faLayerGroup} color="#88888d"/>
                 </NavLink>
+                
             </nav>
 
             <ul>

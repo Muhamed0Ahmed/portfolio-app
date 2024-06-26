@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import AnimatedLetters from "../Animations/AnimatedLetters"
 
+import "./projects.scss"
+
 const Projects = () => {
     const [letter, setLetter] = useState("text-animate");
     useEffect(() => {
@@ -10,7 +12,9 @@ const Projects = () => {
     }, [])
     return (
         <div className="container projects-page">
-            <AnimatedLetters lettersClass={letter} strArray={["P", "R", "O", "J", "E", "C", "T", "s"]} idx={3}/>
+            <h1>
+                <AnimatedLetters lettersClass={letter} strArray={["P", "R", "O", "J", "E", "C", "T", "s"]} idx={3}/>
+            </h1>
         </div>
     )
 }
